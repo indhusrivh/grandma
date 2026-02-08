@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandma Jute Bags | From a Blessing to a Movement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            transition: background-color 0.8s ease;
+            background-color: #f4eee0; 
+        }
+        
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-georgia {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .earthy-gradient {
+            /* Using the simple relative path for GitHub Pages compatibility */
+            background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('home.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #634832;
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeInDown 1s ease-out forwards;
+        }
+
+        section {
+            transition: opacity 0.5s ease;
+            position: relative;
+            display: block;
+            clear: both;
+        }
+
+        .fluid-title {
+            font-size: clamp(1.25rem, 4.5vw, 3.5rem);
+        }
+
+        .fluid-subtitle {
+            font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+        }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-500 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center group">
+                <span class="text-xl font-bold tracking-tight text-stone-900 serif uppercase hover:text-stone-600 transition-colors">Grandma Jute Bags</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest text-stone-600">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#story" class="nav-link">Story</a>
+                <a href="#education" class="nav-link">Materials</a>
+                <a href="#products" class="nav-link">Catalogue</a>
+                <a href="#custom" class="nav-link">Branding</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <a href="#contact" class="text-xs bg-stone-800 text-white px-4 py-2 rounded-full">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Hero Section -->
+    <header id="home" data-bg="#f4eee0" class="relative h-screen flex items-start justify-center text-center text-stone-900 earthy-gradient pt-40 md:pt-48">
+        <div class="absolute inset-0 bg-white/10"></div> 
+        <div class="relative z-10 w-full max-w-[95vw] px-4 animate-fade-in overflow-hidden">
+            <h1 class="fluid-title mb-6 leading-tight text-emerald-900 font-georgia font-bold whitespace-nowrap tracking-tight">
+                Sustainable & Handcrafted Jute Bags
+            </h1>
+            <p class="fluid-subtitle mb-10 font-light tracking-wide mx-auto text-stone-700 whitespace-nowrap">
+                Eco-friendly, durable, and beautifully crafted jute bags, supporting a greener planet.
+            </p>
+        </div>
+    </header>
+
+    <!-- The Legend Section -->
+    <section id="story" data-bg="#ede0d4" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="grandma.png" alt="Jute Fiber Craftsmanship" class="w-full h-[500px] object-cover rounded-lg shadow-2xl" onerror="this.src='https://images.unsplash.com/photo-1544816153-097305944931?auto=format&fit=crop&q=80&w=1000'">
+                <div class="absolute -bottom-6 -right-6 bg-amber-50 p-8 rounded-lg shadow-xl hidden md:block border-l-4 border-amber-600">
+                    <p class="serif italic text-2xl text-stone-700">"Then make them. The world needs more of what you are holding."</p>
+                    <p class="mt-2 text-sm uppercase tracking-widest text-stone-500">— The Mysterious Grandma</p>
+                </div>
+            </div>
+            <div>
+                <span class="text-amber-600 font-bold tracking-widest uppercase text-sm">Our Origin Story</span>
+                <h2 class="text-4xl md:text-5xl mt-4 mb-8 leading-snug serif italic">The Day Everything Changed</h2>
+                <div class="space-y-6 text-stone-600 leading-relaxed text-lg">
+                    <p>
+                        In a quiet corner of India, our founder ran a modest store selling handcrafted jute bags. One afternoon, a grandmother walked in. She didn't want one bag—she wanted two hundred.
+                    </p>
+                    <p>
+                        "I don't have that many," the founder replied. The grandma smiled and said, "Then manufacture them. Why settle for a store when you can empower a village?"
+                    </p>
+                    <p>
+                        She left without buying a single thing, and without leaving a name. We never saw her again. But her vision remained. We moved from retailing to manufacturing, naming our venture <strong>Grandma Jute Bags</strong> in her honor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" data-bg="#f4eee0" class="py-32 px-6 overflow-hidden bg-[#f4eee0]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <span class="text-emerald-700 font-bold tracking-widest uppercase text-sm">Customer Education</span>
+                <h2 class="text-4xl md:text-5xl mt-4 serif italic">The Anatomy of Jute</h2>
+                <p class="text-stone-600 mt-4 max-w-2xl mx-auto">Understanding the fibers that build our world.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="group">
+                    <div class="relative mb-6 overflow-hidden rounded-lg aspect-[4/5] bg-stone-200">
+                        <img src="jute1.webp" alt="Hessian Jute" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&q=80&w=500'">
+                    </div>
+                    <h3 class="text-2xl mb-3 serif italic">Hessian Jute (Burlap)</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">The most popular choice for fashion and gifting. Tighter weave, smoother finish.</p>
+                </div>
+                <div class="group">
+                    <div class="relative mb-6 overflow-hidden rounded-lg aspect-[4/5] bg-stone-200">
+                        <img src="jute2.webp" alt="Jute Canvas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1590739225287-bd31519780c3?auto=format&fit=crop&q=80&w=500'">
+                    </div>
+                    <h3 class="text-2xl mb-3 serif italic">Jute-Cotton Canvas</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">A sophisticated blend (Juco) combining strength with softness.</p>
+                </div>
+                <div class="group">
+                    <div class="relative mb-6 overflow-hidden rounded-lg aspect-[4/5] bg-stone-200">
+                        <img src="jute3.webp" alt="Sacking Jute" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1528190336454-13cd56b45b5a?auto=format&fit=crop&q=80&w=500'">
+                    </div>
+                    <h3 class="text-2xl mb-3 serif italic">Sacking (Gunny Cloth)</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-4">Heavy duty, incredibly strong, designed for extreme handling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalogue -->
+    <section id="products" data-bg="#f9f8f6" class="py-32 bg-[#f9f8f6]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl mb-4 serif italic text-stone-900">Catalogue</h2>
+                <p class="text-stone-600 max-w-xl mx-auto">Handpicked collections for every occasion. Sustainable, stylish, and durable.</p>
+            </div>
+            
+            <!-- Category 1: Lifestyle & Fashion -->
+            <div class="mb-24">
+                <div class="flex items-center gap-4 mb-10">
+                    <h3 class="text-3xl serif italic text-emerald-900 whitespace-nowrap">Lifestyle & Fashion</h3>
+                    <div class="h-[1px] w-full bg-stone-200"></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <script>
+                        const fashionProducts = [
+                            { name: "Product 1", price: 100, moq: 50, img: "cat1_img1.webp"},
+                            { name: "Product 2", price: 100, moq: 50, img: "cat1_img2.webp"},
+                            { name: "Product 3", price: 100, moq: 50, img: "cat1_img3.webp"},
+                            { name: "Product 4", price: 100, moq: 50, img: "cat1_img4.webp"},
+                            { name: "Product 5", price: 100, moq: 50, img: "cat1_img5.webp"},
+                            { name: "Product 6", price: 100, moq: 50, img: "cat1_img6.webp"},
+                            { name: "Product 7", price: 100, moq: 50, img: "cat1_img7.webp"},
+                            { name: "Product 8", price: 100, moq: 50, img: "cat1_img8.webp"},
+                            { name: "Product 9", price: 100, moq: 50, img: "cat1_img9.webp"}
+                        ];
+
+                        fashionProducts.forEach(p => {
+                            document.write(`
+                                <div class="bg-white rounded-sm shadow-sm border border-stone-100 overflow-hidden group flex flex-col">
+                                    <div class="relative overflow-hidden aspect-[4/5] bg-stone-100">
+                                        <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1544816153-097305944931?auto=format&fit=crop&w=500&q=80'">
+                                    </div>
+                                    <div class="p-6 flex-grow flex flex-col">
+                                        <h4 class="text-xl mb-3 serif italic text-stone-900">${p.name}</h4>
+                                        <div class="flex justify-between items-end mb-6">
+                                            <div>
+                                                <p class="text-[9px] uppercase tracking-widest text-stone-400 font-bold mb-1">Starting From</p>
+                                                <p class="text-xl font-bold text-emerald-900">₹${p.price}</p>
+                                            </div>
+                                            <div class="text-right">
+                                                <p class="text-[9px] uppercase tracking-widest text-stone-400 font-bold mb-1">MOQ</p>
+                                                <p class="text-sm font-bold text-stone-700">${p.moq} Units</p>
+                                            </div>
+                                        </div>
+                                        <a href="#contact" class="block w-full text-center py-3 bg-stone-800 text-white text-[10px] uppercase tracking-widest font-bold hover:bg-emerald-900 transition">Inquire Details</a>
+                                    </div>
+                                </div>
+                            `);
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <!-- Category 2: Events & Gifting -->
+            <div>
+                <div class="flex items-center gap-4 mb-10">
+                    <h3 class="text-3xl serif italic text-stone-700 whitespace-nowrap">Events & Gifting</h3>
+                    <div class="h-[1px] w-full bg-stone-200"></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <script>
+                        const eventProducts = [
+                            { name: "Product 1", price: 100, moq: 50, img: "cat2_img1.webp"},
+                            { name: "Product 2", price: 100, moq: 50, img: "cat2_img2.webp" },
+                            { name: "Product 3", price: 100, moq: 50, img: "cat2_img3.webp" },
+                            { name: "Product 4", price: 100, moq: 50, img: "cat2_img4.webp" },
+                            { name: "Product 5", price: 100, moq: 50, img: "cat2_img5.webp" },
+                            { name: "Product 6", price: 100, moq: 50, img: "cat2_img6.webp" },
+                            { name: "Product 7", price: 100, moq: 50, img: "cat2_img1.webp" },
+                            { name: "Product 8", price: 100, moq: 50, img: "cat2_img2.webp" },
+                            { name: "Product 9", price: 100, moq: 50, img: "cat2_img3.webp" }
+                        ];
+
+                        eventProducts.forEach(p => {
+                            document.write(`
+                                <div class="bg-white rounded-sm shadow-sm border border-stone-100 overflow-hidden group flex flex-col">
+                                    <div class="relative overflow-hidden aspect-[4/5] bg-stone-100">
+                                        <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1591348122449-02525d7ba3f6?auto=format&fit=crop&w=500&q=80'">
+                                    </div>
+                                    <div class="p-6 flex-grow flex flex-col">
+                                        <h4 class="text-xl mb-3 serif italic text-stone-900">${p.name}</h4>
+                                        <div class="flex justify-between items-end mb-6">
+                                            <div>
+                                                <p class="text-[9px] uppercase tracking-widest text-stone-400 font-bold mb-1">Starting From</p>
+                                                <p class="text-xl font-bold text-stone-800">₹${p.price}</p>
+                                            </div>
+                                            <div class="text-right">
+                                                <p class="text-[9px] uppercase tracking-widest text-stone-400 font-bold mb-1">MOQ</p>
+                                                <p class="text-sm font-bold text-stone-700">${p.moq} Units</p>
+                                            </div>
+                                        </div>
+                                        <a href="#contact" class="block w-full text-center py-3 bg-stone-800 text-white text-[10px] uppercase tracking-widest font-bold hover:bg-amber-900 transition">Inquire Details</a>
+                                    </div>
+                                </div>
+                            `);
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branding & Customization -->
+    <section id="custom" data-bg="#e6e1d6" class="py-32 border-y border-stone-200 bg-[#e6e1d6]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1 order-2 md:order-1">
+                    <span class="text-amber-600 font-bold tracking-widest uppercase text-sm">Custom Manufacturing</span>
+                    <h2 class="text-4xl md:text-5xl mt-4 mb-6 serif italic">Your Logo, Our Legacy</h2>
+                    <p class="text-stone-600 text-lg mb-8 leading-relaxed">Stand out with fully customizable jute solutions tailored to your brand identity.</p>
+                    <a href="#contact" class="inline-block border-2 border-stone-800 text-stone-800 px-8 py-3 font-bold uppercase tracking-widest text-sm hover:bg-stone-800 hover:text-white transition shadow-sm">Request a Quote</a>
+                </div>
+                <div class="flex-1 order-1 md:order-2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="logo_img.webp" alt="Logo Printing" class="rounded-lg shadow-lg mt-8" onerror="this.src='https://images.unsplash.com/photo-1606813907291-d86ebb9b740e?auto=format&fit=crop&q=80&w=500'">
+                        <img src="logo_bag.webp" alt="Finished Bag" class="rounded-lg shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&q=80&w=500'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" data-bg="#d6ccc2" class="py-32 px-6 bg-[#d6ccc2]">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl mb-16 serif italic text-stone-900">Connect With Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/70 p-12 rounded-sm border border-stone-200/50">
+                    <p class="text-xl font-semibold text-stone-800">+91 96770 64940</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-amber-700 mt-3">Phone & WhatsApp</p>
+                </div>
+                <div class="bg-white/70 p-12 rounded-sm border border-stone-200/50">
+                    <p class="text-lg font-semibold text-stone-800">info@grandmajutebags.com</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-amber-700 mt-3">Email Inquiry</p>
+                </div>
+                <div class="bg-white/70 p-12 rounded-sm border-t-4 border-amber-700">
+                    <p class="text-stone-800 font-medium">Velachery, Chennai, Tamil Nadu, 600042</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-amber-700 mt-3">Manufacturing Unit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-bg="#f4eee0" class="py-20 px-6 text-center border-t border-stone-200 bg-[#f4eee0]">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-2xl font-bold text-stone-900 serif italic uppercase tracking-tight block mb-4">Grandma Jute Bags</span>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-8 text-[10px] uppercase tracking-widest font-bold text-stone-500">
+                <a href="#home">Home</a>
+                <a href="#story">Story</a>
+                <a href="#education">Materials</a>
+                <a href="#products">Catalogue</a>
+                <a href="#custom">Branding</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Instagram Link Section -->
+            <div class="mb-8">
+                <a href="https://www.instagram.com/grandmajutebags" target="_blank" class="inline-flex items-center gap-2 text-stone-700 hover:text-amber-700 transition-colors group">
+                    <svg class="w-5 h-5 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-xs uppercase tracking-widest font-bold">Follow our journey</span>
+                </a>
+            </div>
+
+            <p class="text-xs tracking-widest text-stone-500 uppercase font-bold">&copy; 2026 Grandma Jute Bags.</p>
+        </div>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('header, section, footer');
+        const nav = document.getElementById('main-nav');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bgColor = entry.target.getAttribute('data-bg');
+                    if (bgColor) document.body.style.backgroundColor = bgColor;
+                    if (entry.target.id === 'home') {
+                        nav.classList.replace('bg-white/90', 'bg-transparent');
+                        nav.classList.add('shadow-none');
+                    } else {
+                        nav.classList.replace('bg-transparent', 'bg-white/90');
+                        nav.classList.remove('shadow-none');
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
